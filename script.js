@@ -167,63 +167,197 @@
 
 
 
-// Questions
+// // Questions
 
 
-// 1. Round floating number to 2 decimals with currency symbol
-let price = 125.6789;
-let roundedPrice = price.toFixed(2);
-console.log(`Rs ${roundedPrice}`);
+// // 1. Round floating number to 2 decimals with currency symbol
+// let price = 125.6789;
+// let roundedPrice = price.toFixed(2);
+// console.log(`Rs ${roundedPrice}`);
 
-// 2. Get user's full name and display in uppercase without extra spaces
-let fullName = prompt("Enter your full name:");
-let cleanName = fullName.trim().toUpperCase();
-console.log(`My name is: ${cleanName}`);
+// // 2. Get user's full name and display in uppercase without extra spaces
+// let fullName = prompt("Enter your full name:");
+// let cleanName = fullName.trim().toUpperCase();
+// console.log(`My name is: ${cleanName}`);
 
-// 3. Format receipt with proper alignment using padEnd()
-let item = "Keyboard";
-let pricee = 2500;
-let formatted = `Item: ${item.padEnd(15)}  Price: Rs ${price.toFixed(2)}`;
-console.log(formatted);  
+// // 3. Format receipt with proper alignment using padEnd()
+// let item = "Keyboard";
+// let pricee = 2500;
+// let formatted = `Item: ${item.padEnd(15)}  Price: Rs ${price.toFixed(2)}`;
+// console.log(formatted);  
 
- // 4. Safely convert "123abc" to number and handle NaN
-let value = "123abc";
-let converted = Number(value); // Try converting to number
-if (Number.isNaN(converted)) {
-  console.log("Invalid number!");
-} else {
-  console.log(`Converted number: ${converted}`);
-}
+//  // 4. Safely convert "123abc" to number and handle NaN
+// let value = "123abc";
+// let converted = Number(value); // Try converting to number
+// if (Number.isNaN(converted)) {
+//   console.log("Invalid number!");
+// } else {
+//   console.log(`Converted number: ${converted}`);
+// }
 
-// 5. Calculate total of product prices with comma formatting
-function getTotal(prices) {
-  let total = prices.reduce((sum, price) => sum + price, 0);
-  return total.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-}
-let productPrices = [3254.69, 425.65, 5245.75];
- console.log(`Total: Rs ${getTotal(productPrices)}`);
+// // 5. Calculate total of product prices with comma formatting
+// function getTotal(prices) {
+//   let total = prices.reduce((sum, price) => sum + price, 0);
+//   return total.toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+// }
+// let productPrices = [3254.69, 425.65, 5245.75];
+//  console.log(`Total: Rs ${getTotal(productPrices)}`);
 
- // 6. Clean unwanted characters from text input
-let text = "hello@@world@@!";
-let cleaned = text.replaceAll("@", "");
-console.log(cleaned);
-
-
-
+//  // 6. Clean unwanted characters from text input
+// let text = "hello@@world@@!";
+// let cleaned = text.replaceAll("@", "");
+// console.log(cleaned);
 
 
 
 
- 
+// 2025-11-12
+
+
+// Basic Object
+
+// let car = {
+//     brand: "Toyato",
+//     color: "Blue",
+//     model: "Camry",
+//     Price: "15000000",
+//     isNew: "true"
+// };
+// console.log(car[`color`])
+
+// // adding new property
+// car[`Model year`] = "2025";
+// console.log(car);
+// car.modelYear = 2025;
+// console.log(car);
+
+// //deleting property
+// delete car.Price;
+// console.log(car);
+
+// let studentDataBase ={
+//     Jeru : {
+//         age : 20,
+//         Email : "jeru@gmail.com"
+//     },
+//     Kapi : {
+//         age : 20,
+//         Email : "kapi@gamil.com"
+//     }
+// }
+// console.log(studentDataBase);
+
+// let arr =  [];
+// arr [100] = 99;
+// console.log(arr[99]);
+// console.log(arr)
+
+
+// let fruits = ["apple","banana"];
+// // add end
+// fruits.push("grape");
+// console.log(fruits);
+// // remove end
+// fruits.pop();
+// console.log(fruits);
+// //add start
+// fruits.unshift("orange")
+// console.log(fruits);
+// //remove start
+// fruits.shift();
+// console.log(fruits);
+
+// let colors = ["red","green","blue"];
+// console.log(colors);
+// //remove center (green)
+// colors.splice(1,1,);
+// console.log(colors);
+// //replace item
+// colors.splice(1,1,"yellow");
+// console.log(colors);
 
 
 
+// object Questions
 
 
+//1.How do you create an empty JavaScript object?
+let Person = {};
 
+//2. Create an Object with Properties and Methods
+let person = {
+  name: "Saji",
+  age: 21,
+  IntroduceYou: function(p) {
+    console.log(`Hi, my name is ${p.name} and I am ${p.age} years old.`);
+  }
+};
+person.IntroduceYou(person);
 
+//3. Create a Method that Greets Students
+let personn = {
+  name: "Kapi",
+  age: 20,
+  greetStudent: function(student) {
+    console.log(`Hello ${student.name}, Welcome to the Coding School!`);
+  }
+};
+let Student = {
+  name: "Kapi"
+};
+personn.greetStudent(Student);
 
+//4. Access Object Properties
+let personnn = {
+  name: "Thuva",
+  age: 22,
+  city: "Jaffna"
+};
 
+console.log(personnn.name);  
+console.log(personnn.age);    
+console.log(personnn["city"]);  
+console.log(personnn["age"]);   
 
+//5. Add a New Property
+let Personn = {
+  name: "Api",
+  age: 20
+};
+Personn.email = "api@gmail.com";
+console.log(Personn);
 
+//6. Remove a Property
+let PERSON = {
+  name: "Roni",
+  age: 20,
+  email: "roni@gmail.com"
+};
+delete PERSON.email;
+console.log(PERSON);
 
+//7. Check Property Existence
+// person object
+let PERSONN = {
+  name: "Jeru",
+  age: 20,
+  city: "Mannar"
+};
+// in' operator 
+console.log("name" in PERSONN);   // true
+console.log("email" in PERSONN);  // false
+// hasOwnProperty() method 
+console.log(PERSONN.hasOwnProperty("age"));   // true
+console.log(PERSONN.hasOwnProperty("email")); // false
+
+//8. Merge Two Objects
+let student = {
+  name: "Saran",
+  age: 24
+};
+let course = {
+  courseName: "JavaScript",
+  duration: "6 months"
+};
+let studentCourse = { ...student, ...course };
+console.log(studentCourse);

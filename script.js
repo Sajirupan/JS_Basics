@@ -278,48 +278,48 @@
 
 
 
-// object Questions
+// // object Questions
 
 
-//1.How do you create an empty JavaScript object?
-let Person = {};
+// //1.How do you create an empty JavaScript object?
+// let Person = {};
 
-//2. Create an Object with Properties and Methods
-let person = {
-  name: "Saji",
-  age: 21,
-  IntroduceYou: function(p) {
-    console.log(`Hi, my name is ${p.name} and I am ${p.age} years old.`);
-  }
-};
-person.IntroduceYou(person);
+// //2. Create an Object with Properties and Methods
+// let person = {
+//   name: "Saji",
+//   age: 21,
+//   IntroduceYou: function(p) {
+//     console.log(`Hi, my name is ${p.name} and I am ${p.age} years old.`);
+//   }
+// };
+// person.IntroduceYou(person);
 
-//3. Create a Method that Greets Students
-let personn = {
-  name: "Kapi",
-  age: 20,
-  greetStudent: function(student) {
-    console.log(`Hello ${student.name}, Welcome to the Coding School!`);
-  }
-};
-let Student = {
-  name: "Kapi"
-};
-personn.greetStudent(Student);
+// //3. Create a Method that Greets Students
+// let personn = {
+//   name: "Kapi",
+//   age: 20,
+//   greetStudent: function(student) {
+//     console.log(`Hello ${student.name}, Welcome to the Coding School!`);
+//   }
+// };
+// let Student = {
+//   name: "Kapi"
+// };
+// personn.greetStudent(Student);
 
-//4. Access Object Properties
-let personnn = {
-  name: "Thuva",
-  age: 22,
-  city: "Jaffna"
-};
+// //4. Access Object Properties
+// let personnn = {
+//   name: "Thuva",
+//   age: 22,
+//   city: "Jaffna"
+// };
 
-console.log(personnn.name);  
-console.log(personnn.age);    
-console.log(personnn["city"]);  
-console.log(personnn["age"]);   
+// console.log(personnn.name);  
+// console.log(personnn.age);    
+// console.log(personnn["city"]);  
+// console.log(personnn["age"]);   
 
-//5. Add a New Property
+//5. Add a New Property                               (5,6 for me)
 let Personn = {
   name: "Api",
   age: 20
@@ -336,28 +336,168 @@ let PERSON = {
 delete PERSON.email;
 console.log(PERSON);
 
-//7. Check Property Existence
-// person object
-let PERSONN = {
-  name: "Jeru",
-  age: 20,
-  city: "Mannar"
-};
-// in' operator 
-console.log("name" in PERSONN);   // true
-console.log("email" in PERSONN);  // false
-// hasOwnProperty() method 
-console.log(PERSONN.hasOwnProperty("age"));   // true
-console.log(PERSONN.hasOwnProperty("email")); // false
+// //7. Check Property Existence
+// // person object
+// let PERSONN = {
+//   name: "Jeru",
+//   age: 20,
+//   city: "Mannar"
+// };
+// // in' operator 
+// console.log("name" in PERSONN);   // true
+// console.log("email" in PERSONN);  // false
+// // hasOwnProperty() method 
+// console.log(PERSONN.hasOwnProperty("age"));   // true
+// console.log(PERSONN.hasOwnProperty("email")); // false
 
-//8. Merge Two Objects
-let student = {
-  name: "Saran",
-  age: 24
-};
-let course = {
-  courseName: "JavaScript",
-  duration: "6 months"
-};
-let studentCourse = { ...student, ...course };
-console.log(studentCourse);
+// //8. Merge Two Objects
+// let student = {
+//   name: "Saran",
+//   age: 24
+// };
+// let course = {
+//   courseName: "JavaScript",
+//   duration: "6 months"
+// };
+// let studentCourse = { ...student, ...course };
+// console.log(studentCourse);
+
+
+
+// //2025-11-13
+
+
+// function add(a,b){
+//   return a + b;
+// }
+// let total = add(5, 10);
+// console.log(total);
+
+//  //silinder kanavalavu
+// function volume(r,h){
+//   return Math.PI*r**2*h;
+// }
+// let Total = volume (20,40);
+// console.log(Total.toFixed(2))
+
+
+// const multiply = function(n) {
+//   return n * n;
+// }
+// console.log(multiply(5));
+
+// const square = (n) => n * n;
+// console.log(square(5));
+
+// function greet(name = "Guest"){
+//   console.log("Hello"+" "+ name );
+// }
+// greet()
+
+
+// function add(a,b) {
+//   return a + b;
+// }
+// function add(a,b){
+//   let result = add(6,8)
+// }
+// console.log("Sum is"+" "+add)
+
+// function add (a,b){
+//   return a + b;
+// }
+
+// function displaySum(){
+//   let result = add(3,7)
+//   console.log("Sum is :"+" "+result)
+// }
+// displaySum(add)
+
+
+// // Salary
+// function add (x,y){
+//   return x + y ;
+// }
+
+// function displaySum(){
+//   let result = add(80000,70000)
+//   console.log("Salary is :"+" "+result)
+// }
+
+// function Bonus (Bonus,result) {
+//  return Bonus * result;
+// }
+// function displaySum(){
+//   let results = Bonus (0.1,result)
+//   console.log("Bonus is :"+" "+result)
+// }
+
+
+//  Array Questions
+
+
+//1. Access First and Last Elements
+let Numbers = [10, 20, 30, 40, 50];
+let first = Numbers.at(0);
+let last = Numbers.at(-1);
+console.log("first Number:", first);
+console.log("Last Number:", last);
+
+// 2. Add Elements
+let NUmbers = [10, 20, 30, 40];
+NUmbers.push(50);
+NUmbers.unshift(0);
+console.log(NUmbers);
+
+//3. Remove Elements
+let NUMbers = [10, 20, 30, 40, 50];
+NUMbers.pop();
+NUMbers.shift();
+console.log(NUMbers);
+
+//4. Loop Through Array
+let NUMBers = [10, 20, 30, 40, 50];
+for (let i = 0; i < NUMBers.length; i++) {
+  console.log(NUMBers[i]);
+}
+
+//5. Use forEach()
+let NUMBErs = [10, 20, 30, 40, 50];
+NUMBErs.forEach(function(NUM) {
+  console.log(NUM);
+});
+
+//6. Find Maximum and Minimum
+let NUMBERs = [10, 25, 5, 40, 15];
+let max = Math.max(...NUMBERs);
+let min = Math.min(...NUMBERs);
+console.log("(Maximum):", max);
+console.log("(Minimum):", min);
+
+//7. Check for Element
+let NUMBERS = [10, 20, 30, 36, 40, 50];
+if (NUMBERS .includes(36)) {
+  console.log("36 in the array");
+} else {
+  console.log("36 array not exist");
+}
+
+//8. Sum of Elements
+let numberssss = [10, 20, 30, 40, 50];
+let sum = numberssss.reduce((total, num) => total + num, 0);
+console.log("Sum:", sum);
+
+//9. Sort Array
+let numbersss = [40, 10, 50, 20, 30];
+numbersss.sort((a, b) => a - b);
+console.log("Ascending order:", numbersss);
+
+//10. Reverse Array
+let numberss = [10, 20, 30, 40, 50];
+numberss.reverse();
+console.log("Reversed Array:", numberss);
+
+//11. Filter Numbers
+let numbers = [2, 5, 8, 1, 10, 4];
+let filteredNumbers = numbers.filter(num => num > 5);
+console.log("Filtered Numbers:", filteredNumbers);
